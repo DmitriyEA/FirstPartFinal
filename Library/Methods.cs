@@ -9,7 +9,8 @@ public class Methods
         {
             if (inArray[i] != null) Write($"{inArray[i]} ");
         }
-        Write($"{inArray[inArray.Length - 1]}]");
+        if(inArray[inArray.Length - 1] != null) Write($"{inArray[inArray.Length - 1]} ");
+        Write($"]");
     }
 
     public static string[] SortArray(string[] inArray)
